@@ -6,33 +6,39 @@ body {
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
+  font-weight: 800;
   line-height: 1.5;
-  color: #606c71; }
+  color: #78D9E2;
+}
 
 a {
-  color: #1e6bb8;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
 
 .btn {
   display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
-  .btn + .btn {
-    margin-left: 1rem; }
+  margin: 2rem;
+  padding: 0.3rem;
+  color: #FFF;
+  line-height: 1.8rem;
+  background-color: #78D9E2;
+  border-radius: 1rem;
+  transform: rotate(5deg);
+  transition: 0.3s;
+}
+
+.btn:after {
+  display: inline-block;
+  content: "On GitHub";
+  transform: rotate(-2deg);
+}
 
 .btn:hover {
-  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3); }
+  color: #78D9E2;
+  background-color: rgba(120, 217, 226, 0.3);
+}
 
 @media screen and (min-width: 64em) {
   .btn {
@@ -54,10 +60,9 @@ a {
       margin-left: 0; } }
 
 .page-header {
-  color: #fff;
+  color: #78D9E2;
   text-align: center;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957); }
+}
 
 @media screen and (min-width: 64em) {
   .page-header {
