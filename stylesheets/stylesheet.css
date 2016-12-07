@@ -30,7 +30,7 @@ a {
 
 .btn:after {
   display: inline-block;
-  content: "On GitHub";
+  content: "At GitHub";
   transform: rotate(-2deg);
 }
 
