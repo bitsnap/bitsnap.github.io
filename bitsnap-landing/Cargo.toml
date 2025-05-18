@@ -1,0 +1,39 @@
+[package]
+name = "bitsnap_landing"
+description = "Bitsnap Landing"
+version = "0.0.1"
+authors = ["Yuriy Yarosh <yuriy@yarosh.dev>"]
+license = "MPL-2.0"
+repository = "https://github.com/bitsnap/bitsnap.github.io"
+documentation = "https://bitsnap.io/documentation"
+edition = "2024"
+publish = false
+
+[lib]
+crate-type = ['rlib']
+
+[dependencies]
+anyhow = "*"
+
+[dev-dependencies]
+goldie = "*"
+
+[lints.rust]
+unsafe_code = "forbid"
+unsafe_op_in_unsafe_fn = "forbid"
+
+[profile.dev]
+lto = false
+panic = "abort"
+debug-assertions = true
+overflow-checks = true
+opt-level = 0
+incremental = true
+
+[profile.release]
+lto = true
+panic = "abort"
+debug-assertions = false
+overflow-checks = true
+opt-level = 3
+incremental = true
